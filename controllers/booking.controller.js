@@ -12,7 +12,7 @@ exports.createBooking = catchAsync(async (req, res, next) => {
   });
   const message = `${req.user.name} has requested for a booking, click here to accept: 127.0.0.1:8000/api/v1/seller/confirmbooking/${newBooking._id}"`;
   await sendEmail({
-    email: "jasiahassan120@gmail.com",
+    email: "temp",
     subject: "booking request",
     message,
   });
